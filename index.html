@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" async></script>
 </head>
-<body>
+<body onload="start();">
     <header>
         <h1>CODEBREAKER</h1>
     </header>
     <button id="button">Click for instructions</button>
-    <div></div>
-    <button id="button2">GUESSES LEFT: 7</button>
-    <img src="lock.png"
-    width= 800
-    height = 400
+    <div class = "space"></div>
+    <button id="button2" class="guess">GUESSES LEFT:<div id="number">7</div></button>
+    <div class = "space"></div>
+    <img src="vault2.jpg"
+    width= 600
+    height = 600
     class="center"/>
     <blockquote>
         BREAK THE LOCK
     </blockquote>
-    <button id="button3">Click to guess</button>
+    <button id="button3" class="guess">Click to guess</button>
 </body>
 </html>

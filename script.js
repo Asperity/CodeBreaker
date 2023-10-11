@@ -1,7 +1,12 @@
 const button=document.querySelector("#button");
 
 button.addEventListener("click", giveInstruction);
-
+function start()
+{
+    number = document.getElementById("number");
+    numVar = 7
+    
+}
 function giveInstruction()
 {
     const para = document.createElement("p");
@@ -9,15 +14,9 @@ function giveInstruction()
     document.body.appendChild(para);
 }
 
-const button2=document.querySelector("#button2");
-
- button2.addEventListener("click",decrement);
-
 function decrement()
 {
-    const counter = 0;
-    button2.textContent = `GUESSES LEFT: ${7-counter}`;
-    counter++;
+    number.innerHTML = numVar--; 
 }
 
 const button3=document.querySelector("#button3");
@@ -26,10 +25,9 @@ button3.addEventListener("click", guess);
 
 function guess()
 {
-    const answer = Math.floor(Math.random()*999)+1;
+    answer = Math.floor(Math.random()*999)+1;
     alert("GAME HAS BEGUN");
-    decrement();
-    const i = 0;
+    i = 0;
     while(i < 1)
     {
         const guess = prompt("enter a guess");
@@ -52,7 +50,13 @@ function guess()
         {
             alert("INPUT A NUMBER");
             decrement();
-        }    
+        }
+        
+        if(numVar < 0)
+        {
+            alert("YOU LOSE");
+            i++;
+        }
     }
 
     

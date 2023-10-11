@@ -6,6 +6,9 @@ body
 header
 {
     color:aqua;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: rgb(0, 0, 0);
 }
 button
 {
@@ -20,7 +23,7 @@ button
     padding: 3px 10px;
     cursor: pointer;
 }
-div
+.space
 {
     margin-bottom: 50px;
 }
@@ -32,9 +35,20 @@ div
     margin-right: auto;
     width: 50%;
 }
+
+.guess
+{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   width: 30%; 
+}
 blockquote
 {
     text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    letter-spacing: 2px;
 }
 
 p
